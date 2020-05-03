@@ -1,0 +1,8 @@
+@import '../fonts/fonts.css';
+
+.header-block{
+  font-family: 'Mplus-Regular';
+  height: 600px;
+  background: url('../img/Photo.png');
+  
+}
