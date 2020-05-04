@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './Components/Blocks/Header/Header'
+import Header from './Components/Blocks/Header/Header';
+//import {Router} from 'react-router-dom';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />        
-    </div>
+    <>    
+      <Header />   
+  
+   </>
   );
 }
 
