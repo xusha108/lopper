@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../../assets/styles/Menu.css';
 //import {Link} from 'react-router-dom';
 
 class Menu extends Component {

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
-
-import '../../../assets/styles/Header.css';
 import Logo from '../../../assets/img/Logo.png';
 import BurMenu from '../../../assets/img/Menu.png';
 
@@ -17,7 +15,7 @@ class Header extends Component {
           </div> 
 
           <div className='header-content'>
-            <h3>What we do?</h3>
+            <h3 className='title'>What we do?</h3>
             <h1>We grow <span>great business</span></h1>
 
             <div className='subheader'>

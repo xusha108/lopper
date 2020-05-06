@@ -1,0 +1,63 @@
+@import '../fonts/fonts.css';
+
+.benefits{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 12rem;
+  margin-left: 5em;
+}
+
+.benefits-about{
+  width:43%;
+}
+
+.benefits-about h2{  
+  color: #F61067;
+  text-transform: uppercase;
+}
+
+.benefits-about p{
+  width: 30rem;  
+  font-family: 'Mplus-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.813rem;
+  color: #150433; 
+}
+
+.benefits-about p span{ 
+  font-family: 'Mplus-Bold'; 
+  font-weight: 700; 
+}
+.benefits-about img{
+  margin-top: 3rem;
+}
+
+.benefits-about img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+
+.benefits-img{
+  position: relative;
+  margin-right: 14rem;
+}
+
+.benefits-imgFirst{
+  width: 362px;
+  position: absolute;
+  right: 108px;
+  top: 389px;
+  z-index: 99;
+}
+
+.benefits-imgSecond{  
+  position: absolute;
+  width: 460px;  
+  right: -98px;
+  top: 28px;
+}

@@ -5,24 +5,14 @@
   margin-top: 2rem;
 }
 
-.service-title h3{
+.service-title h3{ 
   font-family: 'Mplus-Bold';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.788rem ;
-  line-height: 4.188rem;
-  color: #F61067;  
+  color: #F61067; 
+  text-transform: uppercase; 
 }
 
 .service-title h2{
-  font-family: 'Mplus-Bold';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 2.813rem;
-  line-height: 26px;
-  letter-spacing: 6px;
-  text-transform: uppercase;  
-  color: #30233D;  
+  text-transform: uppercase;
 }
 
 .service-block{

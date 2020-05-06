@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import ServiceBlock from './ServiceBlock.js';
 import QuoteImg from '../../../assets/img/PhotoService.png';
-import '../../../assets/styles/Service.css';
+
 
 export default class Service extends Component {
   render() {
     return (
       <div className='service'>
         <div className='service-title'>
-          <h3>What we can do?</h3>
-          <h2>Our services</h2>
+          <h3 className='title'>What we can do?</h3>
+          <h2 className='subtitle'>Our services</h2>
         </div>
 
         <ServiceBlock />

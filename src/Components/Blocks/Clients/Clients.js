@@ -1,0 +1,49 @@
+import React, { Component } from 'react';
+
+
+class Clients extends Component {
+  state={
+    clients:[
+      {img: require('../../../assets/img/client1.png')},      
+      {img: require('../../../assets/img/client1.png')},     
+      {img: require('../../../assets/img/client1.png')},
+      {img:require('../../../assets/img/client2.png')},
+      {img:require('../../../assets/img/client2.png')},
+      {img:require('../../../assets/img/client2.png')},
+    ]
+  }
+  render() {
+    return (
+      <div className='clients'>
+        <div className='clients-title'>
+          <h3 className='title'>What we do?</h3>
+          <h2 className='subtitle'>What we do more than you can <br/> imagine, belive us.</h2>
+        </div>
+
+        <div className='clients-about'>
+          <h3 className='title'>We build great business</h3>
+          <p >Nisl condimentum id venenatis a. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Sollicitudin tempor id eu nisl nunc.</p>
+          <p > Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Massa massa ultricies mi quis hendrerit dolor magna. Egestas dui id ornare arcu odio..</p>
+          <p > Massa massa ultricies mi quis hendrerit dolor magna. Egestas dui id ornare arcu odio.</p>
+        </div>
+
+        <div className='clients-list'>
+          <h3 className='title'>Our clients</h3>
+          <div className='clients-list-block'>
+            {this.state.clients.map( (item, index) => {
+              return <div className='clients-list-item' key={index}>
+                  <img src={item.img} alt='#' />
+                </div>
+            })}
+          </div>
+
+        </div>
+
+      
+        
+      </div>     
+    );
+  }
+}
+
+export default Clients;
