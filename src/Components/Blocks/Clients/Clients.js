@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
+import {clients} from '../../../constant/clients.js';
 
 
-class Clients extends Component {
-  state={
-    clients:[
-      {img: require('../../../assets/img/client1.png')},      
-      {img: require('../../../assets/img/client1.png')},     
-      {img: require('../../../assets/img/client1.png')},
-      {img:require('../../../assets/img/client2.png')},
-      {img:require('../../../assets/img/client2.png')},
-      {img:require('../../../assets/img/client2.png')},
-    ]
-  }
+class Clients extends Component { 
   render() {
     return (
       <div className='clients'>
@@ -30,7 +21,7 @@ class Clients extends Component {
         <div className='clients-list'>
           <h3 className='title'>Our clients</h3>
           <div className='clients-list-block'>
-            {this.state.clients.map( (item, index) => {
+            {clients.map( (item, index) => {
               return <div className='clients-list-item' key={index}>
                   <img src={item.img} alt='#' />
                 </div>
