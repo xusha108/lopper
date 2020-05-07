@@ -1,0 +1,88 @@
+@import '../fonts/fonts.css';
+
+.service{
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.service-title h3{ 
+  font-family: 'Mplus-Bold';
+  color: #F61067; 
+  text-transform: uppercase; 
+}
+
+.service-title h2{
+  text-transform: uppercase;
+}
+
+.service-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.service-item{
+  width: 20%;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+}
+
+.service-item h3{
+  font-family: 'Mplus-Bold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: #30233D;
+}
+
+.service-item p{
+  font-family: 'Mplus-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 26px;
+  color: #776C82;
+}
+.service-quote{
+  position: relative;
+  margin:0;
+}
+.service-quote p{ 
+  width: 70%;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.406rem;
+  line-height: 2.5rem; 
+  color: #FCFCFC;
+  background: #5E239D;
+  padding: 5rem 4rem;
+ 
+}
+.service-quote img{
+  z-index: 99;
+  position: absolute;
+  top: -73px;
+  right: 110px;
+}
+
+.service-quote cite span{
+  font-family: 'Mplus-Regular';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 29px;
+  color: #F61067;  
+}
+
+.service-quote cite{
+  font-family: 'Mplus-Regular';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 29px;
+  color: #776C82;
+  margin: 0 4rem;
+}
+

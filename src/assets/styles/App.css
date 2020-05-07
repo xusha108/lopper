@@ -1,8 +1,12 @@
-
-@import './Header';
+@import '../styles/common.css';
+@import '../styles/Header.css';
+@import '../styles/Menu.css';
+@import '../styles/Service.css';
+@import '../styles/Benefits.css';
+@import '../styles/Clients.css';
 
 body { 
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
