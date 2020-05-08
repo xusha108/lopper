@@ -1,0 +1,48 @@
+
+.achivments{ 
+  background: #30124E;
+  margin-top: -5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  z-index: 1;
+}
+.achivments-container{
+  margin: 0 5rem;
+}
+
+.achivments-about h2{
+  color: #F61067;
+}
+
+.achivments-about h3{
+  width: 60%;
+  font-family: 'Mplus-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.688rem;
+  line-height: 2.5rem;
+  color: #FCFCFC;
+}
+
+.achivments-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:5rem;
+}
+
+.achivment-item{
+  width: 30%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  padding: 3rem 3rem;
+}
+.achivment-item:hover{
+  cursor: pointer;
+  background: #F61067;
+}
+
+.achivment-item p,h2,h3{ 
+  color: #FCFCFC;
+  font-family: 'Mplus-Regular';
+}

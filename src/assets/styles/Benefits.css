@@ -17,16 +17,6 @@
   text-transform: uppercase;
 }
 
-.benefits-about p{
-  width: 30rem;  
-  font-family: 'Mplus-Regular';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 1.813rem;
-  color: #150433; 
-}
-
 .benefits-about img{
   margin-top: 3rem;
 }
@@ -35,8 +25,6 @@
   cursor: pointer;
   opacity: 0.8;
 }
-
-
 
 .benefits-img{
   position: relative;

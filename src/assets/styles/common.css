@@ -17,3 +17,13 @@
   color: #30233D;
   line-height: 4.188rem;  
 }
+
+.about{
+  width: 30rem;  
+  font-family: 'Mplus-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.813rem;
+  color: #150433; 
+}

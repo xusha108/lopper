@@ -4,16 +4,14 @@ import {menu} from '../../../constant/menu.js';
 
 class Menu extends Component {
   render() {
-    return (
-      <div className='header-links'>        
+    return (            
         <div className='menu header-menu'>
           {menu.map((item, index) =>
             <a href='/' key={index} className='menu-item'>
               {item}               
             </a>
           )}
-        </div>          
-      </div>      
+        </div>
     );
   }
 }

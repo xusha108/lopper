@@ -4,6 +4,10 @@
 @import '../styles/Service.css';
 @import '../styles/Benefits.css';
 @import '../styles/Clients.css';
+@import '../styles/Achivments.css';
+@import '../styles/Review.css';
+@import '../styles/Subscribe.css';
+@import '../styles/Footer.css';
 
 body { 
   text-align: left;

@@ -1,0 +1,35 @@
+@import '../fonts/fonts.css';
+.review-subscribe{
+  text-align: center;
+  margin: 13rem 0;
+}
+
+.review-subscribe a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Mplus-Regular';
+  color: #9B94A3;
+  font-size:1.125rem;  
+  padding-right: 2rem;
+}
+.review-subscribe a:hover{
+  cursor: pointer;
+  color:#30233D;
+}
+
+.review-subscribe h6{
+  margin: 0 auto;
+  color: #776C82;
+  padding-bottom: 2rem;
+}
+.review-subscribe span{
+  position: relative;
+  color: #F61067;   
+}
+.review-subscribe span::after{
+  position: absolute;
+  content: url(../img/arrowSmall.png);
+  top: -6px;
+  right: -32px;
+  cursor: pointer;
+}

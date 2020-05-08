@@ -57,8 +57,7 @@
   line-height: 2.5rem; 
   color: #FCFCFC;
   background: #5E239D;
-  padding: 5rem 4rem;
- 
+  padding: 5rem 4rem; 
 }
 .service-quote img{
   z-index: 99;
@@ -67,7 +66,7 @@
   right: 110px;
 }
 
-.service-quote cite span{
+cite span{
   font-family: 'Mplus-Regular';
   font-style: normal;
   font-weight: 800;
@@ -76,7 +75,7 @@
   color: #F61067;  
 }
 
-.service-quote cite{
+cite{
   font-family: 'Mplus-Regular';
   font-style: normal;
   font-weight: 800;

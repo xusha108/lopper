@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {services} from '../../../constant/service.js';
 
-
 class ServiceBlock extends Component {
   render() {
     return (
