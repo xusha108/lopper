@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Menu from './Menu';
 import Logo from '../../../assets/img/Logo.png';
 import BurMenu from '../../../assets/img/Menu.png';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
   render() {
     return (
       <header>        
           <div className='header-block'>           
-            <img className='logo header-logo' src={Logo} alt='#' />           
+            <Link to='/about'><img className='logo header-logo' src={Logo} alt='#' /></Link>        
             <Menu />        
             <div className='header-contact'>(01) 666 - 693 - 456</div>
             <img className='header-burger' src={BurMenu} alt='#' />                      

@@ -6,12 +6,13 @@ class ServiceBlock extends Component {
     return (
       <div className='service-block'>
         {services.map( (item, index) => {
-          return <div className='service-item' key={index}>
+          return(
+          <div className='service-item' key={index}>
             <img src={item.img} alt='#' />
             <h3>{item.title}</h3>
             <p>{item.description}</p>
-        </div>
-        })}      
+          </div>        
+        )})}      
       </div>
     );
   }

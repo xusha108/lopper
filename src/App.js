@@ -9,7 +9,7 @@ import Review from './Components/Blocks/Review/Review.js';
 
 import './assets/styles/App.css';
 import Subscribe from './Components/Blocks/Subscribe/Subscribe';
-//import {Router} from 'react-router-dom';
+
 
 
 const App = () => {

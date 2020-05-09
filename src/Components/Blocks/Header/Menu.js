@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {menu} from '../../../constant/menu.js';
-//import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class Menu extends Component {
   render() {
     return (            
         <div className='menu header-menu'>
           {menu.map((item, index) =>
-            <a href='/' key={index} className='menu-item'>
+            <Link to={`/${item === 'home' ? '' : item}`} key={index} className='menu-item'>
               {item}               
-            </a>
+            </Link>
           )}
         </div>
     );

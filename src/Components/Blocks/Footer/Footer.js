@@ -3,7 +3,7 @@ import Menu from '../../../Components/Blocks/Header/Menu.js';
 import Logo from '../../../assets/img/Logo.png';
 import {services} from '../../../constant/service.js';
 import {social} from '../../../constant/social.js';
-//передать классы через пропсы в родительский компонент, чтобы логика была в нем
+
 export default class Footer extends Component {
   render() {
     return (
