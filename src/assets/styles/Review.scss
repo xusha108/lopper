@@ -2,12 +2,25 @@
 
 .review-container{
   position: relative;
-  text-align: center; 
+  text-align: center;
 }
 .review-imgBig{
-  position: absolute;
-  left: 390px;
+  position: relative;
+  transform: translateX(-50%);
+  width: 460px;
+  height: 460px;
+  left: 50%;
   top: -124px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 92.25px;
+    height: 79.73px;
+    background: #F61067;
+    background: url('../img/quotes.png');
+    bottom: 0;
+    left: 0;
+  }
 }
 .review-img-0 img{
   position: absolute;
@@ -57,12 +70,12 @@
   left: 88px;
 }
 .review-arrowLeft:hover{
-  background-image: url(../img/Arrow\ Left\ hover.png);
+  //background-image: url(../img/Arrow\ Left\ hover.png);
   cursor: pointer;
 }
 
 .review-arrowRight:hover{
-  background-image: url(../img/Arrow\ Right\ hover.png);
+  //background-image: url(../img/Arrow\ Right\ hover.png);
   cursor: pointer;
 }
 
@@ -72,15 +85,14 @@
   right: 88px;
 }
 
-.review-quote p{  
+.review-quote p{
   width: 70%;
   font-style: italic;
   font-weight: normal;
   font-size: 2.25rem;
   line-height: 4rem;
   text-align: center;
-  padding: 480px 208px 0;  
-} 
+  padding: 480px 208px 0;
+}
 
 
-  

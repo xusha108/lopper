@@ -5,11 +5,11 @@
 @import '../styles/Benefits.css';
 @import '../styles/Clients.css';
 @import '../styles/Achivments.css';
-@import '../styles/Review.css';
+@import 'Review.scss';
 @import '../styles/Subscribe.css';
 @import '../styles/Footer.css';
 
-body { 
+body {
   text-align: left;
   margin: 0;
 }

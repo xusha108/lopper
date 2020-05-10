@@ -5,10 +5,16 @@ import ArrowLeft from '../../../assets/img/Arrow Left.png';
 import ArrowRight from '../../../assets/img/Arrow Right.png';
 
 class Review extends Component {
+  state = {
+    users,
+    selectedItem: users[0].id
+  }
   render() {
     return (
       <div className='review-container'>
-        <img src={EllipseImg} alt='#' className='review-imgBig' />
+        <div className='review-imgBig'>
+          <img src={EllipseImg} alt='#' />
+        </div>
         {users.map( (item, index) =>
          <div className={`review-img-${index}`} key={index}>
            <img src={item.img} alt='#' />
@@ -17,14 +23,14 @@ class Review extends Component {
         <div className='review-slider-btn'>
         <img src={ArrowLeft} alt='#' className='review-arrowLeft' />
         <img src={ArrowRight} alt='#' className='review-arrowRight' />
-        </div>    
+        </div>
 
         <blockquote className='review-quote'>
           <p>
             "Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique."
-          </p>          
+          </p>
           <cite><span>Kerry Johnes</span> - Some Company</cite>
-        </blockquote>        
+        </blockquote>
       </div>
     );
   }

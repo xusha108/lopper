@@ -7,7 +7,7 @@ import Clients from './Components/Blocks/Clients/Clients.js';
 import Achivments from './Components/Blocks/Achivments/Achivments.js';
 import Review from './Components/Blocks/Review/Review.js';
 
-import './assets/styles/App.css';
+import './assets/styles/App.scss';
 import Subscribe from './Components/Blocks/Subscribe/Subscribe';
 
 import About from './Components/Pages/About';

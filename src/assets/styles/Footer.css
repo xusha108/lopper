@@ -5,7 +5,7 @@ footer{
   padding: 5rem 5rem;
 }
 
-.footer-block{  
+.footer-block{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -28,7 +28,7 @@ footer{
 .footer-menu .menu{
   display: flex;
   flex-wrap: wrap;
-  flex-direction:column;  
+  flex-direction:column;
 }
 
 .footer-menu .menu-item{
@@ -36,21 +36,25 @@ footer{
   border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
 }
 
+.header-menu__footer {
+
+}
+
 .footer-logo p{
   color: #FCFCFC;
 }
 
-.footer-services{  
+.footer-services{
   display: flex;
   flex-wrap: wrap;
-  flex-direction:column;  
+  flex-direction:column;
 }
 
 .footer-services .service-item{
   font-family: 'Mplus-Regular';
   font-size: 1.125rem;
   color: #FCFCFC;
-  text-decoration: none;  
+  text-decoration: none;
   font-style: normal;
   padding-bottom: 1rem;
   border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
@@ -64,12 +68,12 @@ footer{
 }
 
 .footer-contact .phone::before{
-  content: url('../img/phone.png'); 
-  padding-right: 10px;   
+  content: url('../img/phone.png');
+  padding-right: 10px;
 }
 .footer-contact .email::before{
-  content: url('../img/email.png'); 
-  padding-right: 12px; 
+  content: url('../img/email.png');
+  padding-right: 12px;
 }
 .social-item{
   padding-right: 3rem;
