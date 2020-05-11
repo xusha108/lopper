@@ -1,0 +1,47 @@
+@import '../fonts/fonts.css';
+
+.benefits{
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 13%; 
+
+  &-about{
+    width:30%;
+
+    & h2{  
+      color: #F61067;
+      text-transform: uppercase;
+    }
+    & img{
+      margin-top: 3rem;
+      &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  .benefits-img{  
+    &-first{
+      background-repeat:no-repeat ;
+      width: 362px;
+      position: absolute;
+      right: 23%;
+      top: 41%;
+      z-index: 99;
+    }
+    &-second{
+      background-repeat:no-repeat ;
+      position: absolute;
+      right: 8%;
+      top: 5%;
+      z-index: 1;
+    }
+  } 
+}
+
+
+
+

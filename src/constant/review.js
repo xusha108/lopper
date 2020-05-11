@@ -1,5 +1,4 @@
-export const users= [  
-  {img: require('../assets/img/“.png')}, 
+export const users= [   
   {img: require('../assets/img/Ellipse (1).png')},      
   {img: require('../assets/img/Ellipse (2).png')},
   {img: require('../assets/img/Ellipse (3).png')}, 

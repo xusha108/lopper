@@ -1,0 +1,62 @@
+@import '../fonts/fonts.css';
+
+.clients{  
+  margin-top: 10%;
+
+  &-title{
+    & h3{
+      color: #F61067;
+    }  
+  }
+
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    &-about{ 
+      width:40%;   
+      background: #150433;
+      padding: 2% 5% 5%;;
+      z-index: 99;
+
+      & p{      
+        font-family: 'Mplus-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.125rem; 
+        color: #FCFCFC;
+      }
+      
+      & h3{
+        color: #F61067;
+        font-size: 2rem;  
+      }
+    }
+
+
+    &-list{
+      width: 40%;
+
+      & h3{
+        color: #30233D;
+        text-transform: uppercase;
+        margin-bottom: 15%;
+      }
+
+      &-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;        
+
+        &-item{
+          padding: 0 5% 20% 0;
+          width: calc(50%-5%);          
+        }
+      }
+    }
+  }
+}
+
+

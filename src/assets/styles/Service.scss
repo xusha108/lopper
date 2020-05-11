@@ -1,0 +1,89 @@
+@import '../fonts/fonts.css';
+
+.service{ 
+  margin-top: 5%;
+
+  &-title h3{ 
+    font-family: 'Mplus-Bold';
+    color: #F61067; 
+    text-transform: uppercase; 
+  }
+  
+  &-title h2{
+    text-transform: uppercase;
+  }
+
+  .service-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+  
+    .service-item{
+      width: calc(33.3% - 5%);
+      padding-right: 5%;
+      padding-bottom: 5%;
+  
+      & h3{
+        font-family: 'Mplus-Bold';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        color: #30233D;
+      }
+  
+      & p{
+        font-family: 'Mplus-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: #776C82;
+      }
+    }     
+  }
+}
+
+.quote{
+  position: relative;
+  margin:0;
+
+  & p{ 
+    width: 70%;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.406rem;
+    line-height: 2.5rem; 
+    color: #FCFCFC;
+    background: #5E239D;
+    padding: 5% 5%; 
+  }
+  & img{
+    z-index: 99;
+    position: absolute;
+    top: -54%;
+    right: 6%;
+  }
+  
+  & span{
+    font-family: 'Mplus-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.125rem;
+    line-height: 1.813rem;
+    color: #F61067;  
+  }
+  
+  & div{
+    font-family: 'Mplus-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.125rem;
+    line-height: 29px;
+    color: #776C82;
+    margin: 0 4rem;
+  }
+}
+
+
