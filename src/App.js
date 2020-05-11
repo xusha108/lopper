@@ -6,6 +6,11 @@ import Benefits from './Components/Blocks/Benefits/Benefits.js';
 import Clients from './Components/Blocks/Clients/Clients.js';
 import Achivments from './Components/Blocks/Achivments/Achivments.js';
 import Review from './Components/Blocks/Review/Review.js';
+<<<<<<< HEAD
+=======
+
+import './assets/styles/App.scss';
+>>>>>>> c63b3eb337c65a36ac7f53b129d1687479c80f69
 import Subscribe from './Components/Blocks/Subscribe/Subscribe';
 import About from './Components/Pages/About';
 import Service from './Components/Pages/Service';
