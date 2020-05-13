@@ -1,17 +1,22 @@
-@import '../styles/common.css';
-@import '../styles/Header.css';
-@import '../styles/Menu.css';
-@import '../styles/Service.css';
-@import '../styles/Benefits.css';
-@import '../styles/Clients.css';
-@import '../styles/Achivments.css';
-@import 'Review.scss';
-@import '../styles/Subscribe.css';
-@import '../styles/Footer.css';
+@import '../styles/common.scss';
+@import '../styles/Header.scss';
+@import '../styles/Menu.scss';
+@import '../styles/Service.scss';
+@import '../styles/Benefits.scss';
+@import '../styles/Clients.scss';
+@import '../styles/Achivments.scss';
+@import '../styles/Review.scss';
+@import '../styles/Subscribe.scss';
+@import '../styles/Footer.scss';
 
 body {
-  text-align: left;
-  margin: 0;
+  text-align: left;  
+}
+
+.wrapper{
+  max-width: 1146px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -22,6 +27,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
 
 
 

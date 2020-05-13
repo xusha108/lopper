@@ -5,11 +5,7 @@ import ArrowLeft from '../../../assets/img/ArrowLeft.png';
 import ArrowRight from '../../../assets/img/ArrowRight.png';
 
 class Review extends Component {
-  state = {
-    users,
-    selectedItem: users[0].id
-  }
-  render() {
+   render() {
     return (
       <div className='review'>
         <div className='wrapper'>
