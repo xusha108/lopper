@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
 import Logo from '../../../assets/img/Logo.png';
-import BurMenu from '../../../assets/img/Menu.png';
+import BurgerMenu from './BurgerMenu';
 import {Link} from 'react-router-dom';
 
 class Header extends Component {
@@ -13,7 +13,8 @@ class Header extends Component {
               <Link to='/'><img className='logo' src={Logo} alt='#' /></Link>        
               <Menu />        
               <div className='header-contact'>(01) 666 - 693 - 456</div>
-              <img className='header-burger' src={BurMenu} alt='#' />                      
+              <BurgerMenu />
+                                    
             </div> 
 
             <div className='header-content'>
