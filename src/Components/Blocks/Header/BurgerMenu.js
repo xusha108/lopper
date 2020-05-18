@@ -10,7 +10,6 @@ export default class BurgerMenu extends Component {
     isActive: false
   };
 
-
   menuToggle = () => {
     this.setState({
       isActive: !this.state.isActive
@@ -20,9 +19,9 @@ export default class BurgerMenu extends Component {
     let toggleClass = (this.state.isActive) ? 'burger-drawer active' : 'burger-drawer'
 
     return ( 
-    <>
+    <div className='burger'>
       <img
-       className='header-burger'
+       className='burger-img'
        src={BurMenu}
        alt='#'
        onClick={() => this.menuToggle()}
@@ -38,7 +37,7 @@ export default class BurgerMenu extends Component {
 
         <Menu />
       </div>
-    </> 
+    </div> 
     )
   }
 }

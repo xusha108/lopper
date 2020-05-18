@@ -12,7 +12,7 @@ class Header extends Component {
             <div className='header-block'>        
               <Link to='/'><img className='logo' src={Logo} alt='#' /></Link>        
               <Menu />        
-              <div className='header-contact'>(01) 666 - 693 - 456</div>
+              <div className='header-block-contact'>(01) 666 - 693 - 456</div>
               <BurgerMenu />
                                     
             </div> 
@@ -21,11 +21,11 @@ class Header extends Component {
               <h3 className='title'>What we do?</h3>
               <h1>We grow <span>great business</span></h1>
 
-              <div className='subheader'>
-                <div className='subheader-about'> Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</div>
-                <div className='subheader-arrow'></div>
+              <div className='header-content-subheader'>
+                <div className='header-content-subheader-about'> Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</div>
+                <div className='header-content-subheader-arrow'></div>
               </div>
-              <div className='header-scroll'>Scroll to see more</div>
+              <div className='header-content-scroll'><span>Scroll to see more</span></div>
             </div> 
           </div>        
       </header>

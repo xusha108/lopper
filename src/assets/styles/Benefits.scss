@@ -7,7 +7,7 @@
   justify-content: space-between;
   margin-top: 13%; 
 
-  .benefits-about{
+  &-about{
     width:30%;   
 
     & h2{  
@@ -24,7 +24,7 @@
     }
   }
   
-  .benefits-img{  
+  &-img{  
     &-first{
       background-repeat:no-repeat;
      
@@ -43,6 +43,38 @@
   } 
 }
 
+
+@media (max-width: 960px){ 
+  .benefits-about{
+    
+    width: 100%;      
+     & h3,h2,p{width: 80%;}
+   }  
+  .benefits-img{display:none}
+  .benefits{padding-left:25px}
+}  
+
+@media (max-width: 720px){
+  .benefits-about{
+    
+    width: 100%;    
+      & h3,h2,p{ width: 80%; }      
+    }
+  .benefits-img{display:none}
+  .benefits{padding-left:25px}
+  
+}
+
+@media (max-width: 540px){  
+  .benefits-about{
+    
+    width: 100%;     
+     & h3,h2,p{width: 80%;}
+   }
+  .benefits-img{display:none}
+  .benefits{padding-left:25px}
+  
+}
 
 
 

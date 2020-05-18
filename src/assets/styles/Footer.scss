@@ -7,7 +7,14 @@ footer{
   .footer-block{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
+    
+    &-logo{
+      & p{
+        width: 60%;
+        color: #FCFCFC;
+      }
+    }   
 
     & h3 span{
       font-family: 'Mplus-Regular';
@@ -20,65 +27,68 @@ footer{
       color: #FCFCFC;
       border-bottom: 3px solid #F61067;
     }
-    .footer-logo p{
-      width: 60%;
-      color: #FCFCFC;
-    }
-  
-    .footer-menu .menu{
+
+    &-menu{
+      & .menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+
+        & .menu-item{
+          padding-left:0;
+          border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
+        }
+      }  
+    } 
+   
+
+    &-services{
       display: flex;
       flex-wrap: wrap;
       flex-direction:column;
-    }
+
+      & .service-item{
+        font-family: 'Mplus-Regular';
+        font-size: 1.125rem;
+        color: #FCFCFC;
+        text-decoration: none;
+        font-style: normal;
+        padding-bottom: 0.4rem;
+        border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
+        letter-spacing: 0.125rem;
   
-    .footer-menu .menu-item{
-      padding-left:0;
-      border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
+        &:hover{
+          opacity: 0.8;
+        }
+      }
     }
-
-    .footer-services{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction:column;
-    }
-
-    .footer-services .service-item{
-      font-family: 'Mplus-Regular';
-      font-size: 1.125rem;
-      color: #FCFCFC;
-      text-decoration: none;
-      font-style: normal;
-      padding-bottom: 0.4rem;
-      border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
-      letter-spacing: 0.125rem;
-
-      &:hover{
-        opacity: 0.8;
+    
+    &-contact{
+      & p{
+        font-family: 'Mplus-Regular';
+        color: #FCFCFC;
+        font-family: 1.013rem;
+      }
+  
+      & .phone::before{
+        content: url('../img/phone.png');
+        padding-right: 1%;
+      }
+  
+      & .email::before{
+        content: url('../img/email.png');
+        padding-right: 3px;
       }
     }
 
-    .footer-contact p{
-      font-family: 'Mplus-Regular';
-      color: #FCFCFC;
-      font-family: 1.013rem;
+    &-social{
+      &-item{
+        padding-right: 9px;
+      }   
     }
-
-    .footer-contact .phone::before{
-      content: url('../img/phone.png');
-      padding-right: 1%;
-    }
-
-    .footer-contact .email::before{
-      content: url('../img/email.png');
-      padding-right: 3px;
-    }
-
-    .social-item{
-      padding-right: 9px;
-    }     
   }
 
-  .footer-copy{
+ .footer-copy{
     font-family: 'Mplus-Regular';
     color: #FCFCFC;
     text-align: center;
@@ -87,6 +97,21 @@ footer{
   }
 }
 
+@media (max-width: 960px){
+  footer{padding-left: 25px;} 
+  .footer-block{flex-direction: column;}
+}
+
+@media (max-width: 720px){
+  footer{padding-left: 25px;}
+  .footer-block{flex-direction: column;}  
+}
+
+@media (max-width: 540px){
+  footer{padding-left: 25px;} 
+  .footer-block{flex-direction: column;}  
+}
+ 
 
 
 

@@ -24,14 +24,14 @@
   }
 }
 
-@media (max-width: 576px) {
-  .menu{
-    display: none;    
-  } 
+@media (max-width: 960px){
+  .menu{display: none}  
 }
 
-@media (max-width: 768px) { 
-  .menu{
-    display: none;    
-  }
+@media (max-width: 720px) { 
+  .menu{display: none}
+}
+
+@media (max-width: 540px) {
+  .menu{display: none}
 }
