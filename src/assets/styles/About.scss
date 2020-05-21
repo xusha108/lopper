@@ -1,0 +1,153 @@
+@import '../fonts/fonts.css';
+
+
+.aboutpage{ 
+  &-header{    
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between; 
+
+    & .menu-item{
+      color: #30233D;
+      &:hover{
+        cursor: pointer;      
+        border-bottom: 3px solid #30233D;
+        opacity: 0.8;
+      }
+    }
+    &-contact{
+      position: relative; 
+      font-family: 'Mplus-Regular';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 1rem;
+      line-height: 30px;
+      letter-spacing: 2px;
+      color: #30233D;
+      opacity: 0.8;  
+
+      &::before{
+        content: url('../img/phoneDark.png'); 
+        position: absolute;
+        top:1%;
+        left:-16%; 
+      }
+    }    
+  }
+
+  &-headline{
+    height: 400px;    
+    background: url('../img/PhotoAbout.png'); //wrapper мешает на всю ширину сделать
+    background-size: cover;
+    background-repeat: no-repeat;
+    & h1{
+      color:#F61067;
+      font-size: 3.375rem;
+      padding-top: 5%;
+      padding-left: 7%;
+      margin:0;      
+    }  
+    & h3{
+      padding-left: 7%;
+      color:#FCFCFC;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+    }
+    
+  }
+
+  &-intro{
+    margin-top: 10%;
+    & h2{
+      color:#F61067;
+    }
+    & h3{
+      font-size: 1.688rem;
+      line-height: 40px;
+      width: 78%;
+      letter-spacing: 0.1rem;
+    }
+    &-blocks{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 7% 0;
+
+      &-item{
+        width: 40%;
+        padding-right: 10%;
+
+      }
+
+      & h3{
+        font-family: 'Mplus-Bold';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        color: #30233D;
+      }
+      & p{
+        font-family: 'Mplus-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: #776C82;
+      }
+    }
+
+  }
+
+  &-clients{    
+
+    & .clients-title{
+      text-align: center;
+    }
+    & .clients-container{
+      background: #00F0B5;
+    }
+    & .clients-container-about{
+      background: url('../img/bgAboutClients.png');
+      & h3, p{
+        display: none;
+      } 
+    }
+  }
+
+  &-achivments{
+    & .achivments-container{
+      background: white;
+      & h3{
+        color: #30233D;
+      }
+
+      & .achivments-block{
+        &-item{
+          border: 1px solid rgba(246, 16, 103, 0.5);
+          box-sizing: border-box;
+          & h2{
+            color: #30233D;
+
+          }
+        }
+      }
+
+    }
+   
+
+  }
+
+  &-quote{
+
+  }
+
+  &-subcribe{
+
+  }
+
+  &-footer{
+
+  }
+}

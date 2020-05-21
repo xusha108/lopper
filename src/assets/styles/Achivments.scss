@@ -44,21 +44,19 @@
     }
   }
 }
-@media (max-width: 960px){  
+@media (min-width: 768px) and (max-width: 991px){  
   .achivments{padding-left:25px}
-  .achivments-block{ padding-right: 25px;}
-
-   
+  .achivments-block{ padding-right: 25px;}   
 }
 
-@media (max-width: 720px){
+@media (min-width: 576px) and (max-width: 767px){
   .achivments-container .achivments-block .achivment-item{ 
     width: 90%;
   }
   .achivments{padding-left:25px} 
 }
 
-@media (max-width: 540px){  
+@media (min-width: 320px) and (max-width: 576px){  
   .achivments-container .achivments-block .achivment-item{   
     width: 90%;  
    } 

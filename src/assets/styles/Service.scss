@@ -49,10 +49,10 @@
 
 .quote{
   position: relative;
-  margin:0;
+  margin: 0 auto;
 
   & p{ 
-    width: 70%;
+    width: 80%;
     font-style: italic;
     font-weight: normal;
     font-size: 1.406rem;
@@ -88,24 +88,31 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px){
+  .service{padding-left:25px} 
+  .quote{margin: 0 auto} 
+}
 
-@media (max-width: 960px){    
-  .service-block .service-item{width: 40%; text-align: center;}
+@media (min-width: 768px) and (max-width: 991px){    
+  .service-block .service-item{width: 40%; text-align: center;}  
   .quote p{text-align: center;}
-  .service{padding-left:25px}
+ .service{padding-left:25px}
+  .service-title{text-align: center}
 }  
 
-@media (max-width: 720px){  
- .service-block .service-item{width: 40%; text-align: center;}
+@media (min-width: 576px) and (max-width: 767px){  
+ .service-block .service-item{width: 40%; text-align: center;} 
  .quote img {display: none}  
  .quote p{text-align: center}  
  .service{padding-left:25px}
+ .service-title{text-align: center}
 }
 
-@media (max-width: 540px){   
-  .service-block .service-item{width: 80%; text-align: center;}
+@media (min-width: 320px) and (max-width: 576px){   
+  .service-block .service-item{width: 80%; text-align: center;}  
   .quote img {display: none;}  
   .quote p{text-align: center;}
   .service{padding-left:25px}
+  .service-title{text-align: center}
 }
  

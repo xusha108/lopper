@@ -42,12 +42,7 @@ header{
     }
   
     & h1{
-      font-family: 'Mplus-Regular';
-      font-style: normal;
-      font-weight: 900;
-      font-size: 6.188rem;
-      line-height: 7.375rem;
-      color: #FCFCFC;
+      
       margin: 0;
       padding-bottom: 7%;
     }
@@ -114,26 +109,32 @@ header{
   }  
 }
 
-@media (max-width: 960px){  
-  .header-contact{display: none}
+@media (min-width: 992px) and (max-width: 1199px){
   header{padding-left:20px}   
 }
 
-@media (max-width: 720px){
-  .header-contact{display: none}
-  .header-scroll span{display: none}
-  .subheader-about{display: none}
-  header .header-content .subheader{border:none}  
+@media (min-width: 768px) and (max-width: 991px){
+  header .header-block-contact{display: none}
+  .header-content-scroll span{display: none}
+  header .header-content-subheader-about{display: none}
+  header .header-content-subheader{border:none} 
   header{padding-left:20px}  
 }
 
-@media (max-width: 540px){  
-  .header-contact{display: none}
-  .header-scroll{display: none}
-  .header-scroll span{display: none}
-  .subheader-about{display: none}
-  header .header-content .subheader{border:none} 
+@media (min-width: 576px) and (max-width: 767px){
+  header .header-block-contact{display: none} 
+  .header-content-scroll span{display: none}
+  header .header-content-subheader-about{display: none}
+  header .header-content-subheader{border:none} 
   header{padding-left:20px}  
+}
+
+@media (min-width: 320px) and (max-width: 576px){  
+  header .header-block-contact{display: none}  
+  .header-content-scroll span{display: none}
+  header .header-content-subheader-about{display: none}
+  header .header-content-subheader{border:none} 
+  header{padding-left:20px;}  
 }
  
 

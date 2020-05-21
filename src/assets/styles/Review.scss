@@ -10,8 +10,7 @@
     width: 460px;
     height: 460px;
     left: 50%;
-    top: -124px;
-
+    top: -100px;
     &:before {
       content: '';
       position: absolute;
@@ -103,21 +102,27 @@
   }
 }
 
-@media (max-width: 960px){  
+@media (min-width: 768px) and (max-width: 991px){  
   .review-items{display: none;} 
   .review-arrowRight{display: none;} 
   .review-arrowLeft{display: none;}
+  .review-imgBig{width:360px; height: 360px;}
+  .review-imgBig:before{display: none;}
 }
 
-@media (max-width: 720px){
+@media (min-width: 576px) and (max-width: 767px){
+  .review-imgBig img{width:360px; height: 360px;}
   .review-items{display: none;} 
   .review-arrowRight{display: none;} 
   .review-arrowLeft{display: none;} 
+  .review-imgBig:before{display: none;}
 }
 
-@media (max-width: 540px){ 
+@media (min-width: 320px) and (max-width: 576px){ 
+  .review-imgBig img{width:360px; height: 360px;}
   .review-items{display: none;} 
   .review-arrowRight{display: none;} 
   .review-arrowLeft{display: none;} 
+  .review-imgBig:before{display: none;}
 }
  

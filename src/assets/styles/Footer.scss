@@ -37,6 +37,7 @@ footer{
         & .menu-item{
           padding-left:0;
           border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
+          font-weight: 400;
         }
       }  
     } 
@@ -97,17 +98,17 @@ footer{
   }
 }
 
-@media (max-width: 960px){
+@media (min-width: 768px) and (max-width: 991px){
   footer{padding-left: 25px;} 
-  .footer-block{flex-direction: column;}
+  //.footer-block{flex-direction: column;}
 }
 
-@media (max-width: 720px){
+@media (min-width: 576px) and (max-width: 767px){
   footer{padding-left: 25px;}
-  .footer-block{flex-direction: column;}  
+  //.footer-block{flex-direction: column;}  
 }
 
-@media (max-width: 540px){
+@media (min-width: 320px) and (max-width: 576px){
   footer{padding-left: 25px;} 
   .footer-block{flex-direction: column;}  
 }

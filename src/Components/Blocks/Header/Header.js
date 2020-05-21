@@ -19,7 +19,7 @@ class Header extends Component {
 
             <div className='header-content'>
               <h3 className='title'>What we do?</h3>
-              <h1>We grow <span>great business</span></h1>
+              <h1 className='main-title'>We grow <span>great business</span></h1>
 
               <div className='header-content-subheader'>
                 <div className='header-content-subheader-about'> Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</div>
