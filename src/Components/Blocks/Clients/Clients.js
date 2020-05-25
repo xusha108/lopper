@@ -21,7 +21,7 @@ class Clients extends Component {
             </div>
 
             <div className='clients-container-list'>
-              <h3 className='title'>Our clients</h3>
+              <h3 className='title'>{this.props.title}</h3>
               <div className='clients-container-list-block'>
                 {clients.map( (item, index) => {
                   return <div className='clients-container-list-block-item' key={index}>

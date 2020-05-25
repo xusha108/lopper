@@ -8,6 +8,7 @@ import Achivments from './Components/Blocks/Achivments/Achivments.js';
 import Review from './Components/Blocks/Review/Review.js';
 import Subscribe from './Components/Blocks/Subscribe/Subscribe';
 import About from './Components/Pages/About';
+import Home from './Components/Pages/Home';
 import Service from './Components/Pages/Service';
 import Work from './Components/Pages/Work';
 import './assets/styles/App.scss';
@@ -21,13 +22,14 @@ const App = () => {
           <Header />
           <ServiceBlock />
           <Benefits />
-          <Clients />
+          <Clients/>
           <Achivments />
           <Review />
           <Subscribe />
           <Footer />
         </Route>
         <Route path='/about' component = {About} />
+        <Route path='/home' component = {Home} />
         <Route path='/service' component = {Service} />
         <Route path='/work' component = {Work} />
       </Switch>

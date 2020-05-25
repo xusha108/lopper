@@ -9,6 +9,7 @@ import Footer from '../Blocks/Footer/Footer';
 import BurgerMenu from '../Blocks/Header/BurgerMenu';
 import Features from '../Blocks/Features/Features';
 import Clients from '../Blocks/Clients/Clients';
+import ServiceBlock from '../Blocks/Service/ServiceBlock';
 
 import Logo from '../../assets/img/Logo-about.png';
 
@@ -64,15 +65,24 @@ class About extends Component {
           </div>
 
           <div className='aboutpage-clients'>
-            <Clients />
+            <Clients
+              title = {
+              <h3>
+                Apparently we had reached a great height in the atmosphere,
+                for the sky was a dead black, and the stars had ceased to twinkle.
+              </h3>}
+            />
           </div>
 
           <div className='aboutpage-achivments'> 
-            <Achivments />            
+            <Achivments />
+            <div className='wrapper'>
+            <ServiceBlock /> 
+            </div>          
           </div>
 
           <div className='aboutpage-quote'>
-            <Review />             
+            <Review source={require('../../assets/img/EllipseBigAbout.png')} />             
           </div>
 
           <div className='aboutpage-subcribe'>
@@ -81,8 +91,7 @@ class About extends Component {
 
           <div className='aboutpage-footer'>
             <Footer />             
-          </div>
-      {/* </div> */}
+          </div>     
     </div>
      
     );

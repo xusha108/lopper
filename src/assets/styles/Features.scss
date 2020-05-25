@@ -35,15 +35,22 @@
     }
 
     .second-block{
-        flex-basis:35%;
+        flex-basis:35%;        
 
         &-item-1, &-item-2, &-item-3 {      
         padding: 25.5% 9%;
         color: #F4F4ED;
+        width:462px;
+        overflow: hidden;
+        background-position: center center;       
+        transition-duration: .2s;
 
-        &:hover{
-          margin-left: -10%;
-          cursor: pointer;         
+        &:hover{ 
+          width:550px;        
+          cursor: pointer;
+          background-position: right 10px center;
+          text-indent: 0;          
+          margin-left: -50px;         
         }
       }
       &-item-1{
@@ -61,7 +68,7 @@
       flex-basis:25%;
       
       & img{
-        margin-top: -15%;
+        margin-top: -15%; 
       }  
     }
   }

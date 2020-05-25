@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {users} from '../../../constant/review.js';
-import EllipseImg from '../../../assets/img/EllipseBig.png';
 import ArrowLeft from '../../../assets/img/ArrowLeft.png';
 import ArrowRight from '../../../assets/img/ArrowRight.png';
 
@@ -9,7 +8,7 @@ class Review extends Component {
     return (
       <div className='review'>
         <div className='wrapper'>
-          <div className='review-imgBig'><img src={EllipseImg} alt='#'  /></div>
+          <div className='review-imgBig'><img src={this.props.source} alt='#'  /></div>
 
           <div className='review-items'>
             {users.map( (item, index) =>
