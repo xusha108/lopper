@@ -34,7 +34,19 @@
       }
     }
     & .burger{
-      filter: brightness(30%);
+      & img{
+        filter: brightness(30%);
+      }
+      & .burger-drawer{
+        background: #30233D;
+      }
+      & .menu-item{
+        color: white;
+        &:hover{
+          background:white;
+          color:#30233D;
+        }
+      }
     }    
   }
 
@@ -188,8 +200,7 @@
   .clients-container-list{display: block; padding-left:20px; width: 85%;} 
   .clients-container-list-block{width: calc(50%-5%);} 
   .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
-  .aboutpage-quote{margin-top: 25%}
-
+  .aboutpage-quote{margin-top: 25%}  
 }
 
 @media (min-width: 576px) and (max-width: 767px){
@@ -202,13 +213,11 @@
   .aboutpage-intro-blocks-item{width: 70%}
   .clients-container-about{display: none;} 
   .clients-container-list{display: block; padding-left:20px; width: 85%;}
-  .clients-container-list-block{width: calc(50%-5%);
+  .clients-container-list-block{width: calc(50%-5%)}
   .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
-  .aboutpage-quote{margin-top: 25%}
+  .aboutpage-quote{margin-top: 25%}  
+  }
 
-
-  }     
-}
 
 @media (min-width: 320px) and (max-width: 576px){  
   .aboutpage-header-contact{display: none}
@@ -221,8 +230,6 @@
   .clients-container-about{display: none;} 
   .clients-container-list{display: block; padding-left:20px; width: 100%;}
   .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
-  .aboutpage-quote{margin-top: 25%}
-
-   
+  .aboutpage-quote{margin-top: 25%} 
 }
  

@@ -32,11 +32,12 @@
 
     .second-block{ 
       width: 40%;
+
         &-item-1, &-item-2, &-item-3 {
         color: #F4F4ED;           
         background-position: center center;       
         transition-duration: .3s; 
-        padding: 23% 6% ;  
+        padding: 21.3% 11%;  
 
         &:hover{                 
           cursor: pointer;                  
@@ -45,6 +46,7 @@
         & div{           
           padding-right: 17%;
         }
+        
       }
       &-item-1{
         background: #5E239D;        
@@ -66,29 +68,23 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
-  .features-blocks .third-block{display: none;}  
- // .features-blocks .first-block{display: none;} 
+  .features-blocks .third-block{display: none;} 
 }
 
 @media (min-width: 768px) and (max-width: 991px){
   .features-blocks .third-block{display: none;}
-  //.features-blocks .first-block{display: none;} 
-  .features-blocks .first-block-item{font-size: 1rem; line-height: 1.788rem;}
-  .features-blocks .second-block{width: 50%;} 
+  .features-blocks .second-block{width: 50%;}
+  .features-blocks .first-block-item{font-size: 1rem; line-height: 1.788rem;}  
 }
 
 @media (min-width: 576px) and (max-width: 767px){
   .features-blocks .third-block{display: none;}
-  //.features-blocks .first-block{display: none;}
-  .features-blocks .first-block-item{font-size: 1rem; line-height: 1.788rem;} 
-  .features-blocks{justify-content: start;}
-  .features-blocks .second-block{width: 50%;}  
+  .features-blocks .second-block{width: 100%;}
+  .features-blocks .first-block{display: none;}
 }
 
-@media (min-width: 320px) and (max-width: 576px){
-  .features-blocks{justify-content: start;}
+@media (min-width: 320px) and (max-width: 576px){  
   .features-blocks .third-block{display: none;} 
-  .features-blocks .first-block{display: none;} 
-  .features-blocks .first-block-item{font-size: 0.7rem; line-height: 1.188rem;}
-  .features-blocks .second-block{width: 40%;}
+  .features-blocks .first-block{display: none;}
+  .features-blocks .second-block{width: 100%;}
 } 
