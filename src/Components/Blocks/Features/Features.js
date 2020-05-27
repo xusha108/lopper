@@ -20,9 +20,9 @@ class Features extends Component {
           </div>
 
           <div className='second-block'>
-            <div className='second-block-item-1 about'>Id consectetur purus ut faucibus pulvinar elementum integer enim. A arcu cursus vitae congue mauris rhoncus aenean.</div>
-            <div className='second-block-item-2 about'>Enim neque volutpat ac tincidunt vitae. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel.</div>
-            <div className='second-block-item-3 about'>Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Eleifend donec pretium vulputate sapien nec sagittis.</div>
+            <div className='second-block-item-1 about'><div>Id consectetur purus ut faucibus pulvinar elementum integer enim. A arcu cursus vitae congue mauris rhoncus aenean.</div></div>
+            <div className='second-block-item-2 about'><div>Enim neque volutpat ac tincidunt vitae. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel.</div></div>
+            <div className='second-block-item-3 about'><div>Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Eleifend donec pretium vulputate sapien nec sagittis.</div></div>
           </div>
 
           <div className='third-block'>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 import Menu from '../Blocks/Header/Menu';
-import Achivments from '../Blocks/Achivments/Achivments';
+import Achievements from '../Blocks/Achievements/Achievements';
 import Review from '../Blocks/Review/Review';
 import Subscribe from '../Blocks/Subscribe/Subscribe';
 import Footer from '../Blocks/Footer/Footer';
@@ -66,18 +66,14 @@ class About extends Component {
 
           <div className='aboutpage-clients'>
             <Clients
-              title = {
-              <h3>
-                Apparently we had reached a great height in the atmosphere,
-                for the sky was a dead black, and the stars had ceased to twinkle.
-              </h3>}
+              title =  "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle."
             />
           </div>
 
-          <div className='aboutpage-achivments'> 
-            <Achivments />
+          <div className='aboutpage-achievements'>            
+            <Achievements />
             <div className='wrapper'>
-            <ServiceBlock /> 
+            <ServiceBlock limit={3} /> 
             </div>          
           </div>
 
@@ -92,8 +88,7 @@ class About extends Component {
           <div className='aboutpage-footer'>
             <Footer />             
           </div>     
-    </div>
-     
+    </div>     
     );
   }
 }

@@ -1,4 +1,4 @@
-export const achivment =[
+export const achievements =[
   {
     id: '01',
     title: 'Research',

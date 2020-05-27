@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {users} from '../../../constant/review.js';
 import ArrowLeft from '../../../assets/img/ArrowLeft.png';
 import ArrowRight from '../../../assets/img/ArrowRight.png';
@@ -36,3 +37,7 @@ class Review extends Component {
 }
 
 export default Review;
+
+Review.propTypes = {
+  source: PropTypes.string
+};

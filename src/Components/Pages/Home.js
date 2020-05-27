@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Achivments from '../Blocks/Achivments/Achivments';
+import Achievements from '../Blocks/Achievements/Achievements';
 import Review from '../Blocks/Review/Review';
 import Subscribe from '../Blocks/Subscribe/Subscribe';
 import Footer from '../Blocks/Footer/Footer';
@@ -26,11 +26,11 @@ class Home extends Component {
           </div>
 
           <div className='homepage-clients'>
-            <Clients  title={<h3>Our clients</h3>}  />
+            <Clients  title="Our clients" />
           </div>
 
-          <div className='homepage-achivments'> 
-            <Achivments />                     
+          <div className='homepage-achievements'> 
+            <Achievements />                     
           </div>              
 
           <div className='homepage-features'>

@@ -3,9 +3,10 @@ import {services} from '../../../constant/service.js';
 
 class ServiceBlock extends Component {
   render() {
+    const {limit} = this.props;    
     return (
       <div className='service-block'>
-        {services.map( (item, index) => {
+        {services.slice(0, limit).map( (item, index) => {
           return(
           <div className='service-item' key={index}>
             <img src={item.img} alt='#' />

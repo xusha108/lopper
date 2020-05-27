@@ -1,12 +1,12 @@
 
-.achivments{ 
+.achievements{ 
   background: #30124E;
   margin-top: -5%;
   padding: 15% 0; 
   z-index: 1;
 
   &-container{  
-    .achivments-about{
+    .achievements-about{
      & h2{
       color: #F61067;
     }
@@ -21,13 +21,13 @@
       color: #FCFCFC;
     }
   }        
-    .achivments-block{
+    .achievements-block{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top:5%;
     
-      .achivment-item{
+      .achievements-item{
         width: 30%;
         border: 1px solid rgba(255, 255, 255, 0.2);
         box-sizing: border-box;
@@ -45,22 +45,22 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px){  
-  .achivments{padding-left:25px}
-  .achivments-block{ padding-right: 25px;}   
+  .achievements{padding-left:25px}
+  .achievements-block{ padding-right: 25px;}   
 }
 
 @media (min-width: 576px) and (max-width: 767px){
-  .achivments-container .achivments-block .achivment-item{ 
+  .achievements-container .achievements-block .achievements-item{ 
     width: 90%;
   }
-  .achivments{padding-left:25px} 
+  .achievements{padding-left:25px} 
 }
 
 @media (min-width: 320px) and (max-width: 576px){  
-  .achivments-container .achivments-block .achivment-item{   
+  .achievements-container .achievements-block .achievements-item{   
     width: 90%;  
    } 
-   .achivments{padding-left:25px}   
+   .achievements{padding-left:25px}   
 }
 
 

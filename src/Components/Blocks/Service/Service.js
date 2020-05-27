@@ -13,7 +13,7 @@ export default class Service extends Component {
             <h2 className='subtitle'>Our services</h2>
           </div>
 
-          <ServiceBlock />
+          <ServiceBlock limit={6} />
 
           <div className='service-quote quote'>
             <p>

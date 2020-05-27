@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
-import AchivmentBlock from '../Achivments/AchivmentBlock.js';
+import AchievementsBlock from '../Achievements/AchievementsBlock';
 
 
-class Achivments extends Component {
+class Achievements extends Component {
   render() {
     return ( 
-      <div className='achivments'> 
+      <div className='achievements'> 
         <div className='wrapper'>
-          <div className='achivments-container'>
-            <div className='achivments-about'>
+          <div className='achievements-container'>
+            <div className='achievements-about'>
               <h2 className='title'>What we do</h2>
               <h3>
                 Apparently we had reached a great height in the atmosphere, 
                 for the sky was a dead black, and the stars had ceased to twinkle.
               </h3>          
             </div>
-            <div className='achivments-block'>
-              <AchivmentBlock />
+            <div className='achievements-block'>
+              <AchievementsBlock />
             </div>
           </div> 
         </div>       
@@ -25,4 +25,4 @@ class Achivments extends Component {
   }
 }
 
-export default Achivments;
+export default Achievements;

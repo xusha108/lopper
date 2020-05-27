@@ -4,7 +4,7 @@ import Footer from './Components/Blocks/Footer/Footer.js';
 import ServiceBlock from './Components/Blocks/Service/Service.js';
 import Benefits from './Components/Blocks/Benefits/Benefits.js';
 import Clients from './Components/Blocks/Clients/Clients.js';
-import Achivments from './Components/Blocks/Achivments/Achivments.js';
+import Achievements from './Components/Blocks/Achievements/Achievements.js';
 import Review from './Components/Blocks/Review/Review.js';
 import Subscribe from './Components/Blocks/Subscribe/Subscribe';
 import About from './Components/Pages/About';
@@ -23,13 +23,13 @@ const App = () => {
           <ServiceBlock />
           <Benefits />
           <Clients/>
-          <Achivments />
+          <Achievements />
           <Review />
           <Subscribe />
           <Footer />
         </Route>
-        <Route path='/about' component = {About} />
         <Route path='/home' component = {Home} />
+        <Route path='/about' component = {About} />
         <Route path='/service' component = {Service} />
         <Route path='/work' component = {Work} />
       </Switch>
