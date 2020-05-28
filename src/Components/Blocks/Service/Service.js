@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ServiceBlock from './ServiceBlock.js';
 import QuoteImg from '../../../assets/img/PhotoService.png';
 
@@ -9,8 +10,10 @@ export default class Service extends Component {
       <div className='service'>
         <div className='wrapper'>
           <div className='service-title'>
-            <h3 className='title'>What we can do?</h3>
+            <h3 className='title'>{this.props.title}</h3>
             <h2 className='subtitle'>Our services</h2>
+            <p className='about'>{this.props.about}</p>
+            
           </div>
 
           <ServiceBlock limit={6} />
@@ -29,3 +32,7 @@ export default class Service extends Component {
   }
 }
 
+Service.propTypes = {
+  title: PropTypes.string,
+  about: PropTypes.string
+};

@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './Components/Blocks/Header/Header.js';
-import Footer from './Components/Blocks/Footer/Footer.js';
-import ServiceBlock from './Components/Blocks/Service/Service.js';
-import Benefits from './Components/Blocks/Benefits/Benefits.js';
-import Clients from './Components/Blocks/Clients/Clients.js';
-import Achievements from './Components/Blocks/Achievements/Achievements.js';
-import Review from './Components/Blocks/Review/Review.js';
-import Subscribe from './Components/Blocks/Subscribe/Subscribe';
+// import Header from './Components/Blocks/Header/Header.js';
+// import Footer from './Components/Blocks/Footer/Footer.js';
+// import ServiceBlock from './Components/Blocks/Service/Service.js';
+// import Benefits from './Components/Blocks/Benefits/Benefits.js';
+// import Clients from './Components/Blocks/Clients/Clients.js';
+// import Achievements from './Components/Blocks/Achievements/Achievements.js';
+// import Review from './Components/Blocks/Review/Review.js';
+// import Subscribe from './Components/Blocks/Subscribe/Subscribe';
 import About from './Components/Pages/About';
 import Home from './Components/Pages/Home';
 import Service from './Components/Pages/Service';
@@ -19,14 +19,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route path='/' exact>
-          <Header />
-          <ServiceBlock />
-          <Benefits />
-          <Clients/>
-          <Achievements />
-          <Review />
-          <Subscribe />
-          <Footer />
+         
         </Route>
         <Route path='/home' component = {Home} />
         <Route path='/about' component = {About} />

@@ -18,7 +18,7 @@ class Home extends Component {
           </div>   
 
           <div className='homepage-features'>
-            <Service />
+            <Service title="What we can do?" />
           </div>
 
           <div className='homepage-features'>
