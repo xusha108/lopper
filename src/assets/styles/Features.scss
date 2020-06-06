@@ -1,0 +1,90 @@
+@import '../fonts/fonts.css';
+
+.features{
+ 
+  &-title{
+   background: #5E239D;
+   padding: 5% 0; 
+    & h2, h3{
+      color:#FCFCFC;
+      padding-left: 7%;
+    }
+  }
+
+  &-blocks{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: flex-end;   
+
+    .first-block, .second-block, .third-block  {
+      width: 30%;     
+    }
+
+    .first-block{
+      &-item{        
+        font-size: 1.588rem; 
+        padding:31% 19%;  
+        color:#F61067; 
+        letter-spacing: 0.1rem;
+        line-height: 2.5rem;         
+      }
+    }
+
+    .second-block{ 
+      width: 40%;
+
+        &-item-1, &-item-2, &-item-3 {
+        color: #F4F4ED;           
+        background-position: center center;       
+        transition-duration: .3s; 
+        padding: 21.3% 11%;  
+
+        &:hover{                 
+          cursor: pointer;                  
+          margin-left: -10%;         
+        }
+        & div{           
+          padding-right: 17%;
+        }
+        
+      }
+      &-item-1{
+        background: #5E239D;        
+      }
+      &-item-2{
+        background: #30124E;        
+      }
+      &-item-3{
+        background: #150433;        
+      }          
+    }
+
+    .third-block{ 
+      & img{
+        margin-top: -9%; 
+      }  
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .features-blocks .third-block{display: none;} 
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .features-blocks .third-block{display: none;}
+  .features-blocks .second-block{width: 50%;}
+  .features-blocks .first-block-item{font-size: 1rem; line-height: 1.788rem;}  
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .features-blocks .third-block{display: none;}
+  .features-blocks .second-block{width: 100%;}
+  .features-blocks .first-block{display: none;}
+}
+
+@media (min-width: 320px) and (max-width: 576px){  
+  .features-blocks .third-block{display: none;} 
+  .features-blocks .first-block{display: none;}
+  .features-blocks .second-block{width: 100%;}
+} 

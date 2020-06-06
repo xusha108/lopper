@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: 'Mplus-Regular';
+    src: url('Mplus1p-Regular.eot') format('embedded-opentype'),
+      url('Mplus1p-Regular.woff') format('woff'),
+    url('MPLUS1p-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Mplus-Bold';
+    src: url('Mplus1p-Bold.eot') format('embedded-opentype'),
+      url('Mplus1p-Bold.woff') format('woff'),
+    url('MPLUS1p-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }

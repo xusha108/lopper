@@ -1,0 +1,41 @@
+@import '../fonts/fonts.css';
+
+.menu{
+  display: flex;
+  justify-content: space-between; 
+
+  &-item{
+    font-family: 'Mplus-Bold';
+    font-style: normal; 
+    font-size: 1.125rem;
+    line-height: 30px;
+    letter-spacing: 0.125rem;
+    color: #FCFCFC; 
+    font-weight: 600;
+    padding: 0 1rem; 
+    text-decoration: none;
+    border-bottom: 3px rgba(111, 108, 110, 0.003) solid;
+
+    &:hover{
+      cursor: pointer;
+      color:#FCFCFC;
+      border-bottom: 3px solid #FCFCFC;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){  
+  .menu{display: none} 
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .menu{display: none}     
+}
+
+@media (min-width: 320px) and (max-width: 576px){  
+  .menu{display: none}  
+}
+
+
