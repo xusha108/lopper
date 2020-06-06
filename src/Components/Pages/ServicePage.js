@@ -7,6 +7,7 @@ import Subscribe from '../Blocks/Subscribe/Subscribe';
 import Footer from '../Blocks/Footer/Footer';
 import BurgerMenu from '../Blocks/Header/BurgerMenu';
 import Service from '../Blocks/Service/Service';
+import Section from '../Blocks/Section/Section';
 
 import Logo from '../../assets/img/Logo-about.png';
 
@@ -56,12 +57,20 @@ class ServicePage extends Component {
           <Service
            title="We are Amazing"
            about="Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quam elementum pulvinar etiam non. Eu consequat."
-          />
-                      
+          />                      
+        </div> 
+        
+        <div className='sectionpage-services'>
+          <Section />                      
         </div> 
 
         <div className='aboutpage-quote'>
-          <Review source={require('../../assets/img/EllipseBigAbout.png')} />             
+          <Review 
+            source={require('../../assets/img/EllipseBigService.png')} 
+            person="Jack Smith"
+            company="Some Company"  
+            quote="Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique."
+          />             
         </div>
 
         <div className='aboutpage-subcribe'>
