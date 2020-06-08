@@ -54,11 +54,11 @@
     background-repeat: no-repeat;
     margin-top: -11%;
     padding-bottom: 5%;
-    // &:hover{      
-    //   background-image: url('../img/servicepageHover.png');
-    //   background-repeat: no-repeat;
-    //   border: lightseagreen;  //как сделать границу???  
-    // }
+    &:hover{      
+      background-image: url('../img/servicepageHover.png');
+      background-repeat: no-repeat;
+     
+    }
 
     & .quote{
       display: none;
@@ -70,10 +70,8 @@
 
       & .subtitle, .about{
         color: #FCFCFC;
-        padding: 0 29%;
-        
-      }   
-
+        padding: 0 29%;        
+      }
     }
   }
 }

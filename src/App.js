@@ -1,9 +1,9 @@
 import React from 'react';
 
-import About from './Components/Pages/About';
-import Home from './Components/Pages/Home';
+import AboutPage from './Components/Pages/AboutPage';
+import HomePage from './Components/Pages/HomePage';
 import ServicePage from './Components/Pages/ServicePage';
-import Work from './Components/Pages/Work';
+import WorkPage from './Components/Pages/WorkPage';
 import './assets/styles/App.scss';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -11,13 +11,11 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path='/' exact>
-         
-        </Route>
-        <Route path='/home' component = {Home} />
-        <Route path='/about' component = {About} />
+        <Route path='/' exact component = {HomePage}></Route>       
+        <Route path='/home' component = {HomePage} />
+        <Route path='/about' component = {AboutPage} />
         <Route path='/service' component = {ServicePage} />
-        <Route path='/work' component = {Work} />
+        <Route path='/work' component = {WorkPage} />
       </Switch>
     </Router>
   );

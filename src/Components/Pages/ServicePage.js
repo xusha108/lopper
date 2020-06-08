@@ -55,7 +55,8 @@ class ServicePage extends Component {
 
         <div className='servicepage-services'>
           <Service
-           title="We are Amazing"
+           title="We are amazing"
+           subtitle="Our services"
            about="Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quam elementum pulvinar etiam non. Eu consequat."
           />                      
         </div> 

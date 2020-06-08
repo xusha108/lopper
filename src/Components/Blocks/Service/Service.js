@@ -11,7 +11,7 @@ export default class Service extends Component {
         <div className='wrapper'>
           <div className='service-title'>
             <h3 className='title'>{this.props.title}</h3>
-            <h2 className='subtitle'>Our services</h2>
+            <h2 className='subtitle'>{this.props.subtitle}</h2>
             <p className='about'>{this.props.about}</p>
             
           </div>

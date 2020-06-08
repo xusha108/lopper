@@ -1,0 +1,74 @@
+@import '../fonts/fonts.css';
+
+.workpage{
+  .aboutpage-headline{
+    background: url('../img/PhotoWork.png');
+    height: 360px;
+  } 
+  & .quote{
+    display: none;
+  }
+
+  & .service-block{
+    display: none;
+  }
+  & .service-title{
+    text-align: center;
+    width: 100%;
+    padding: 10% 0;
+
+    & .subtitle, .about{     
+      padding: 0 25%;        
+    }
+  }
+  &-team{
+    background: #150433;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    
+
+    &-item{      
+      width: 41%;      
+      padding: 8% 2%;
+           
+    
+      & .workpage-img-6{
+        border-radius: 100%;
+      }
+
+      & .workpage-img-5{
+        margin-top: -15%;
+      }
+      & .workpage-img-3{
+        margin-top: -15%;
+      } 
+    }
+    & .active{
+      position: absolute;     
+      left: 61px;
+      top: 108px;
+      width: 325px;
+      height: 460px;
+      background: #5E239D;
+      cursor: pointer;
+      padding:  0 5%; 
+      display:none;
+
+      & h3,h2, p{
+        color: #FCFCFC;
+        font-family: 'Mplus-Regular'
+      }
+      & h2{
+        text-transform: uppercase;
+        letter-spacing: 0.3rem ;
+      }
+    }      
+
+    &:hover>.active{
+      cursor: pointer;
+      display: block;      
+    }  
+  }
+}

@@ -13,7 +13,7 @@ import ServiceBlock from '../Blocks/Service/ServiceBlock';
 
 import Logo from '../../assets/img/Logo-about.png';
 
-class About extends Component {
+class AboutPage extends Component {
   render() {
     return (
       <div className='aboutpage'> 
@@ -93,4 +93,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default AboutPage;

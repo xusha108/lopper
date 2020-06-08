@@ -9,7 +9,7 @@ import Header from '../Blocks/Header/Header';
 import Service from '../Blocks/Service/Service';
 import Benefits from '../Blocks/Benefits/Benefits';
 
-class Home extends Component {
+class HomePage extends Component {
   render() {
     return (
       <div className='homepage'> 
@@ -49,4 +49,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomePage;
