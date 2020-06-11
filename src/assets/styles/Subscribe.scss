@@ -25,6 +25,7 @@
   }
 
   &-btn{
+    position:relative;
     background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     font-style: normal;
     font-family: 'Mplus-Bold';
@@ -34,13 +35,17 @@
     align-items: center;
     letter-spacing: 0.375rem;
     text-transform: uppercase;
-    color: #F61067;
-    width: 15%;  
-    word-wrap: break-word;
+    color: #F61067;   
+    border: 0; 
+    outline: none; 
 
-    &::after{      
+    &::after{ 
+      position: absolute;
+      left:95%;
+      top:0;    
       content: url(../img/arrowSmall.png);
-      cursor: pointer;      
+      cursor: pointer;
+            
     }
     &:hover{
       cursor: pointer;
@@ -49,15 +54,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px){  
-  .subscribe-btn span{display: none;}  
-}
-
-@media (min-width: 576px) and (max-width: 767px){
-  .subscribe-btn span{display: none;} 
-}
-
 @media (min-width: 320px) and (max-width: 576px){ 
-  .subscribe-btn span{display: none;}     
+  .subscribe-btn span{display: none;}
+  .subscribe-btn::after{top: -21px;}      
 }
+
   

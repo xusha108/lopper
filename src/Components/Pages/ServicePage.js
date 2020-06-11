@@ -6,10 +6,11 @@ import Review from '../Blocks/Review/Review';
 import Subscribe from '../Blocks/Subscribe/Subscribe';
 import Footer from '../Blocks/Footer/Footer';
 import BurgerMenu from '../Blocks/Header/BurgerMenu';
-import Service from '../Blocks/Service/Service';
+import ServiceBlock from '../Blocks/Service/ServiceBlock';
 import Section from '../Blocks/Section/Section';
 
 import Logo from '../../assets/img/Logo-about.png';
+import {servicesService} from '../../constant/service';
 
 class ServicePage extends Component {
   render() {
@@ -50,15 +51,18 @@ class ServicePage extends Component {
                 </div>
               </div>              
           </div>
-        </div>           
-         
+        </div> 
 
         <div className='servicepage-services'>
-          <Service
-           title="We are amazing"
-           subtitle="Our services"
-           about="Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quam elementum pulvinar etiam non. Eu consequat."
-          />                      
+          <div className='service-title'>
+            <h3 className='title'>We are amazing</h3>
+            <h2 className='subtitle'>Our services</h2>
+            <p className='about'>Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quam elementum pulvinar etiam non. Eu consequat.</p>            
+          </div>
+
+          <div className='wrapper'>
+            <ServiceBlock list={servicesService} /> 
+          </div>                               
         </div> 
         
         <div className='sectionpage-services'>

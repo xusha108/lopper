@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ServiceBlock from './ServiceBlock.js';
+import ServiceBlock from '../../Blocks/Service/ServiceBlock';
 import QuoteImg from '../../../assets/img/PhotoService.png';
+import {services} from '../../../constant/service.js';
 
 
 export default class Service extends Component {
@@ -16,7 +17,7 @@ export default class Service extends Component {
             
           </div>
 
-          <ServiceBlock limit={6} />
+          <ServiceBlock list= {services} />
 
           <div className='service-quote quote'>
             <p>

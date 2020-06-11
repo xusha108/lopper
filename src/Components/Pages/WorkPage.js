@@ -10,19 +10,19 @@ import Service from '../Blocks/Service/Service';
 
 import Logo from '../../assets/img/Logo-about.png';
 import '../../assets/styles/WorkPage.scss';
-import {workImgs} from '../../constant/workImgs';
+import {team} from '../../constant/team';
 
 class WorkPage extends Component {
   render() {
     return (
       <div className='workpage'>
-      <div className='wrapper'> 
-        <div className='aboutpage-header'>
-          <Link to='/'><img className='logo' src={Logo} alt='#' /></Link>        
-          <Menu />        
-          <div className='aboutpage-header-contact'>(01) 666 - 693 - 456</div>
-          <BurgerMenu />  
-        </div>
+        <div className='wrapper'> 
+          <div className='aboutpage-header'>
+            <Link to='/'><img className='logo' src={Logo} alt='#' /></Link>        
+            <Menu />        
+            <div className='aboutpage-header-contact'>(01) 666 - 693 - 456</div>
+            <BurgerMenu />  
+          </div>
       </div>
 
       <div className='aboutpage-headline'>
@@ -38,24 +38,27 @@ class WorkPage extends Component {
            subtitle="Our team"
            about="Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quam elementum pulvinar etiam non. Eu consequat."
           />           
-      </div>
-
-      <div className='workpage-team'>
-      {workImgs.map( (item, index) => {
+      </div>    
+      
+    <div className='workpage-team'>               
+        {team.map( (item, index) => {
           return(
-          <div key={index} >
-            <div className='workpage-team-item' key={index}>
-              <img src={item.img} alt='#' className={`workpage-img-${index+1}`} />            
+          <div className='workpage-team-container' key={index}>
+            <div className="workpage-team-container-photo">
+              <img src={item.img} alt={item.name} className={`photo-${index+1}`}/>
             </div>
-            <div className='active'>
-              <h3>Klara Ipsum</h3>
-              <h2 className='about'>Designer</h2>
-              <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
-              <p> klara@lopper.com</p>             
-            </div> 
+            <div className="workpage-team-container-info">
+              <div className={`info-${index+1}`}>
+                <h3>{item.name}</h3>
+                <span>{item.profession}</span>
+                <p className='about'>{item.about}</p>
+                <p>{item.email}</p>
+                <img src={item.icon} alt={item.name} />
+              </div>   
+            </div>   
           </div>       
-        )})}     
-      </div>
+        )})}        
+      </div>  
 
       <div className='aboutpage-quote'>
         <Review 
@@ -72,8 +75,7 @@ class WorkPage extends Component {
 
       <div className='aboutpage-footer'>
           <Footer />             
-      </div> 
-    
+      </div>     
     </div>
     );
   }

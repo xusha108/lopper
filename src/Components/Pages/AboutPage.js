@@ -12,6 +12,7 @@ import Clients from '../Blocks/Clients/Clients';
 import ServiceBlock from '../Blocks/Service/ServiceBlock';
 
 import Logo from '../../assets/img/Logo-about.png';
+import {servicesAbout} from '../../constant/service';
 
 class AboutPage extends Component {
   render() {
@@ -73,7 +74,7 @@ class AboutPage extends Component {
           <div className='aboutpage-achievements'>            
             <Achievements />
             <div className='wrapper'>
-            <ServiceBlock limit={3} /> 
+            <ServiceBlock list={servicesAbout} /> 
             </div>          
           </div>
 

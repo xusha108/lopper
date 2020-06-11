@@ -52,12 +52,19 @@
     background:linear-gradient(0deg, #150433, #150433), #30233D;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -11%;
+    margin-top: -5%;
     padding-bottom: 5%;
     &:hover{      
       background-image: url('../img/servicepageHover.png');
-      background-repeat: no-repeat;
-     
+      background-repeat: no-repeat;     
+    }
+
+    & .service-block{
+      & .service-item{
+        & h3{
+          color: #00F0B5;
+        }
+      }
     }
 
     & .quote{
