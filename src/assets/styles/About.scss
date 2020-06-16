@@ -219,7 +219,6 @@
   .aboutpage-quote{margin-top: 25%}  
   }
 
-
 @media (min-width: 320px) and (max-width: 576px){  
   .aboutpage-header-contact{display: none}
   .aboutpage-header{padding-left:20px} 
@@ -232,5 +231,6 @@
   .clients-container-list{display: block; padding-left:20px; width: 100%;}
   .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
   .aboutpage-quote{margin-top: 25%} 
+  .aboutpage-subscribe{text-align: center;}
 }
  

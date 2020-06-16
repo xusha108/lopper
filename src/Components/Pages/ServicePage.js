@@ -43,10 +43,10 @@ class ServicePage extends Component {
                 <div className='servicepage-intro-blocks-item-1'>15+
                   <div>Nobel prizes</div>              
                 </div>
-                <div className='servicepage-intro-blocks-item-2'>33
+                <div className='servicepage-intro-blocks-item-2'>33+
                   <div>Nobel prizes</div> 
                 </div>
-                <div className='servicepage-intro-blocks-item-3'>12
+                <div className='servicepage-intro-blocks-item-3'>12+
                   <div>Nobel prizes</div> 
                 </div>
               </div>              
