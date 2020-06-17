@@ -1,17 +1,51 @@
 export const users= [  
-  // {
-  //   id: 'id-0',
-  //   phrase: 'test',
-  //   name: 'test',
-  //   company: 'test',
-//}
-
-  {img: require('../assets/img/Ellipse (1).png')},
-  {img: require('../assets/img/Ellipse (2).png')},
-  {img: require('../assets/img/Ellipse (3).png')},
-  {img: require('../assets/img/Ellipse (4).png')},
-  {img: require('../assets/img/Ellipse (5).png')},
-  {img: require('../assets/img/Ellipse (6).png')},
-  {img: require('../assets/img/Ellipse (7).png')},
-
+  {
+    img: require('../assets/img/Ellipse (1).png'),
+    id: 'id-0',
+    phrase: 'Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until ',
+    name: 'Kerry Johnes',
+    company: 'Some 1 Company',
+  },
+  {
+    img: require('../assets/img/Ellipse (2).png'),
+    id: 'id-1',
+    phrase: 'Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.',
+    name: 'Yoko Ipsum',
+    company: 'Some 2 Company',
+  },
+  {
+    img: require('../assets/img/Ellipse (3).png'),
+    id: 'id-2',
+    phrase: 'Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until .',
+    name: 'Lene Kravits',
+    company: 'Some 3 Company',
+  },
+  {
+    img: require('../assets/img/Ellipse (4).png'),
+    id: 'id-3',
+    phrase: 'Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.',
+    name: 'Kate Middlton',
+    company: 'Some 4 Company',
+  },
+  {
+    img: require('../assets/img/Ellipse (5).png'),
+    id: 'id-4',
+    phrase: 'Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until .',
+    name: 'John Johnes',
+    company: 'Some 5 Company',
+  },
+  {
+    img: require('../assets/img/Ellipse (6).png'),
+    id: 'id-5',
+    phrase: 'Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.',
+    name: 'May Smith',
+    company: 'Some 6 Company',
+  },
+  {
+    img: require('../assets/img/Ellipse (7).png'),
+    id: 'id-6',
+    phrase: 'Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until ',
+    name: 'Ketty Holms',
+    company: 'Some 7 Company',
+  },
 ]

@@ -3,9 +3,28 @@ import PropTypes from 'prop-types';
 import {users} from '../../../constant/review.js';
 import ArrowLeft from '../../../assets/img/ArrowLeft.png';
 import ArrowRight from '../../../assets/img/ArrowRight.png';
+import Slider from '../Review/Slider';
 
 class Review extends Component {
-   render() {
+ 
+  state = {
+    currentImageIndex: 0,
+  }
+
+  changeSliderIndex= (index) => {    
+
+    if(this.checkExistIndex(index)) {
+      return this.setState({currentImageIndex: index})
+    }     
+  }
+
+  checkExistIndex = (index) => {
+   return typeof users[index] !== 'undefined';    
+ }
+
+   render() {   
+    const {currentImageIndex}=this.state;    
+
     return (
       <div className='review'>
         <div className='wrapper'>
@@ -14,21 +33,38 @@ class Review extends Component {
           <div className='review-items'>
             {users.map( (item, index) =>
             <div className={`review-img-${index+1}`} key={index}>
-              <img src={item.img} alt='#' />
+              <img
+               src={item.img} alt='#'
+               className={currentImageIndex === index ? 'activeSlider' : ''} 
+              />
+              
               </div>
           )}
           </div>
 
           <div className='review-slider-btn'>
-            <img src={ArrowLeft} alt='#' className='review-arrowLeft' />
-            <img src={ArrowRight} alt='#' className='review-arrowRight' />
+            <img
+              src={ArrowLeft}
+              alt='#'
+              className='review-arrowLeft'
+              onClick={() => this.changeSliderIndex(currentImageIndex-1)}              
+            />
+
+            <img
+             src={ArrowRight}
+             alt='#'
+             className='review-arrowRight'
+             onClick={() => this.changeSliderIndex(currentImageIndex+1)}
+            />
+
           </div>    
 
-          <div className='review-quote quote'>
-            <p>
-              "Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique."
-            </p>          
-            <div><span>Kerry Johnes</span> - Some Company</div>
+          <div className='review-quote quote'>  
+            <Slider
+              phrase={users[currentImageIndex].phrase}
+              name={users[currentImageIndex].name}
+              company={users[currentImageIndex].company}            
+            />         
           </div>        
         </div>
       </div>
