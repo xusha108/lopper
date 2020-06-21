@@ -48,14 +48,15 @@
     
           & .container-info{
             position:absolute;
-            top: 146px;
-            left: 75px;
+            top: 0;
+            left: 0;
             width: 420px;
             height: 469px;
             background: #5E239D;
             cursor: pointer;        
             display:none; 
-            padding: 0 5%;     
+            padding: 0 5%;  
+            margin: 21% 10%;   
     
             & h3,p,span{
               font-family: 'Mplus-Regular';
