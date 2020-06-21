@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
 import Logo from '../../../assets/img/Logo.png';
-import BurMenu from '../../../assets/img/Menu.png';
+import BurgerMenu from './BurgerMenu';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
   render() {
     return (
       <header>        
-          <div className='header-block'>           
-            <img className='logo header-logo' src={Logo} alt='#' />           
-            <Menu />        
-            <div className='header-contact'>(01) 666 - 693 - 456</div>
-            <img className='header-burger' src={BurMenu} alt='#' />                      
-          </div> 
+          <div className='wrapper'> 
+            <div className='header-block'>        
+              <Link to='/'><img className='logo' src={Logo} alt='#' /></Link>        
+              <Menu />        
+              <div className='header-block-contact'>(01) 666 - 693 - 456</div>
+              <BurgerMenu />
+                                    
+            </div> 
 
-          <div className='header-content'>
-            <h3 className='title'>What we do?</h3>
-            <h1>We grow <span>great business</span></h1>
+            <div className='header-content'>
+              <h3 className='title'>What we do?</h3>
+              <h1 className='main-title'>We grow <span>great business</span></h1>
 
-            <div className='subheader'>
-              <p>Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</p>
-            </div>
-            <div className='header-scroll'>
-              <p>Scroll to see more</p>
-            </div>
-          </div>       
+              <div className='header-content-subheader'>
+                <div className='header-content-subheader-about'> Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</div>
+                <div className='header-content-subheader-arrow'></div>
+              </div>
+              <div className='header-content-scroll'><span>Scroll to see more</span></div>
+            </div> 
+          </div>        
       </header>
     );
   }

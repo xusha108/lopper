@@ -1,0 +1,100 @@
+@import '../fonts/fonts.css';
+
+.workpage{
+  .aboutpage-headline{
+    background: url('../img/PhotoWork.png');
+    height: 360px;
+  } 
+  
+  & .service-block{
+    display: none;
+  }
+  & .service-title{
+    text-align: center;
+    width: 100%;
+    padding: 10% 0;
+
+    & .subtitle, .about{     
+      padding: 0 25%;        
+    }
+  } 
+  & .service-quote{
+    display: none;
+  } 
+
+  &-team{
+    background: #150433;   
+
+    &-block{ 
+      display: flex; 
+      justify-content: space-around;  
+      flex-wrap: wrap;   
+
+        & .container{         
+          position: relative;
+          padding: 10% 5%; 
+            
+        &:first-child{  
+          margin-top: -250px; 
+        }   
+        &:nth-child(2n){  
+          margin-top: -180px; 
+        }               
+         
+         &:hover>.container-info{
+            cursor: pointer;
+            display: block;      
+          }      
+    
+          & .container-info{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 420px;
+            height: 469px;
+            background: #5E239D;
+            cursor: pointer;        
+            display:none; 
+            padding: 0 5%;  
+            margin: 21% 10%;   
+    
+            & h3,p,span{
+              font-family: 'Mplus-Regular';
+              letter-spacing: 0.1rem;
+              color:#FCFCFC;
+            }
+            & span{
+              text-transform: uppercase;
+            }
+          }       
+        }   
+      }       
+    }
+    .aboutpage-quote {
+       margin-top: -1%;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px){
+    .container-photo img{width:260px; height: 260px;}  
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px){   
+    .container-photo img{width:160px; height: 160px;}
+    .workpage-team-block .container:first-child{margin-top:0}
+    .workpage-team-block .container:nth-child(2n){margin-top:0}    
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px){
+    .container-photo img{width:160px; height: 160px;}
+    .workpage-team-block .container:first-child{margin-top:0}
+    .workpage-team-block .container:nth-child(2n){margin-top:0}   
+    }
+  
+  @media (min-width: 320px) and (max-width: 576px){  
+    .review-imgBig{display: none;}
+    .container-photo img{width:160px; height: 160px;}
+    .workpage-team-block .container:nth-child(2n){margin-top:0}
+    .workpage-team-block .container:first-child{margin-top:0}   
+  }
+

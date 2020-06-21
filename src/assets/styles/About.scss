@@ -1,0 +1,236 @@
+@import '../fonts/fonts.css';
+
+
+.aboutpage{ 
+
+  &-header{    
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between; 
+
+    & .menu-item{
+      color: #30233D;
+      &:hover{
+        cursor: pointer;      
+        border-bottom: 3px solid #30233D;
+        opacity: 0.8;
+      }
+    }
+    &-contact{
+      position: relative; 
+      font-family: 'Mplus-Regular';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 1rem;
+      line-height: 30px;
+      letter-spacing: 2px;
+      color: #30233D;
+      opacity: 0.8;  
+
+      &::before{
+        content: url('../img/phoneDark.png'); 
+        position: absolute;
+        top:1%;
+        left:-16%; 
+      }
+    }
+    & .burger{
+      & img{
+        filter: brightness(30%);
+      }
+      & .burger-drawer{
+        background: #30233D;
+      }
+      & .menu-item{
+        color: white;
+        &:hover{
+          background:white;
+          color:#30233D;
+        }
+      }
+    }    
+  }
+
+  &-headline{
+    height: 400px;    
+    background: url('../img/PhotoAbout.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    & h1{
+      color:#F61067;
+      font-size: 3.375rem;
+      padding-top: 5%;      
+      margin:0; 
+      width: 50%;     
+    }  
+    & h3{      
+      color:#FCFCFC;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      width: 50%;
+    }
+    
+  }
+
+  &-intro{
+    margin-top: 10%;
+    & h2{
+      color:#F61067;
+    }
+    & h3{
+      font-size: 1.688rem;
+      line-height: 40px;
+      width: 78%;
+      letter-spacing: 0.1rem;
+    }
+    &-blocks{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 7% 0;
+
+      &-item{
+        width: 40%;
+        padding-right: 10%;
+
+      }
+
+      & h3{
+        font-family: 'Mplus-Bold';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        color: #30233D;
+      }
+      & p{
+        font-family: 'Mplus-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: #776C82;
+      }
+    }
+
+  }
+
+  &-clients{
+    & .clients{
+
+      & .clients-title{
+        text-align: center;
+        padding-bottom: 5%;
+      }
+      & .clients-content{
+        background-image: url('../img/BgClients.png');
+        padding-top: 6%;
+
+        & .clients-container{
+  
+          & .clients-container-about{
+            background: url('../img/bgAboutClients.png') no-repeat center; 
+    
+            & h3, p{
+              display: none;       
+            } 
+          } 
+          & .clients-container-list{         
+            & h3{
+              color: white;            
+            }
+            &-block{ 
+              &-item{
+                padding: 0 5% 34% 0;
+                width: calc(50%-5%); 
+                filter: brightness(0) invert(1);          
+              }
+            }
+          }      
+        }
+      }
+    }
+  }
+
+  &-achievements{
+    & .achievements{
+      background: white;
+      padding: 2% 0;
+
+      & .achievements-container{       
+        & h3{
+          color: #30233D;
+          width: 100%;
+        }  
+        & .achievements-block{
+          display:none;         
+        }         
+      }
+    }  
+    & .service-block{
+      justify-content: space-between;
+      & .service-item{
+        border: 1px solid rgba(246, 16, 103, 0.5);
+        box-sizing: border-box;
+        padding: 1%;       
+      }
+    }
+  }
+
+  &-quote{
+    margin-top:15%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .aboutpage-header{padding-left:20px}
+  .aboutpage-headline{padding-left:20px}
+  .aboutpage-intro{padding-left:20px}
+  .aboutpage-achievements{padding-left:20px}  
+}
+
+@media (min-width: 768px) and (max-width: 991px){   
+  .aboutpage-header{padding-left:20px}
+  .aboutpage-headline{padding-left:20px} 
+  .aboutpage-intro{padding-left:20px} 
+  .aboutpage-achievements{padding-left:20px} 
+  .achievements-about{ text-align: center;}
+  .clients-container-list{display: block; padding-left:20px; width: 85%;}
+  .clients-container-about{display: none;} 
+  .clients-container-list{display: block; padding-left:20px; width: 85%;} 
+  .clients-container-list-block{width: calc(50%-5%);} 
+  .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
+  .aboutpage-quote{margin-top: 25%}  
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .aboutpage-header-contact{display: none}   
+  .aboutpage-header{padding-left:20px}
+  .aboutpage-headline{padding-left:20px}
+  .aboutpage-achievements{padding-left:20px;}
+  .achievements-about{ text-align: center;}
+  .aboutpage-intro{padding-left:20px}
+  .aboutpage-intro-blocks-item{width: 70%}
+  .clients-container-about{display: none;} 
+  .clients-container-list{display: block; padding-left:20px; width: 85%;}
+  .clients-container-list-block{width: calc(50%-5%)}
+  .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
+  .aboutpage-quote{margin-top: 25%}  
+  }
+
+@media (min-width: 320px) and (max-width: 576px){  
+  .aboutpage-header-contact{display: none}
+  .aboutpage-header{padding-left:20px} 
+  .aboutpage-headline{padding-left:20px}  
+  .aboutpage-achievements{padding-left:20px} 
+  .achievements-about{ text-align: center;}
+  .aboutpage-intro{padding-left:20px}
+  .aboutpage-intro-blocks-item{width: 70%}  
+  .clients-container-about{display: none;} 
+  .clients-container-list{display: block; padding-left:20px; width: 100%;}
+  .aboutpage-achievements .service-block .service-item{margin-bottom: 5%;}
+  .aboutpage-quote{margin-top: 25%} 
+  .aboutpage-subscribe{text-align: center;}
+}
+ 

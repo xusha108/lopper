@@ -1,0 +1,62 @@
+@import '../fonts/fonts.css';
+
+.subscribe{
+  text-align: center;
+  margin: 13rem 0;  
+
+  & h6{
+    margin: 0 auto;
+    color: #776C82;
+    padding-bottom: 2%;
+    width: 100%;
+  }
+
+  & input{  
+    font-style: normal;
+    background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;  
+    font-family: 'Mplus-Regular';
+    color: #9B94A3;
+    font-size:1.125rem;  
+    padding-right: 2rem;
+    border:0;
+  }
+
+  &-btn{
+    position:relative;
+    background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    font-style: normal;
+    font-family: 'Mplus-Bold';
+    font-weight: 800;
+    font-size: 0.788rem;
+    line-height: 1.625rem; 
+    align-items: center;
+    letter-spacing: 0.375rem;
+    text-transform: uppercase;
+    color: #F61067;   
+    border: 0; 
+    outline: none; 
+
+    &::after{ 
+      position: absolute;
+      left:95%;
+      top:0;    
+      content: url(../img/arrowSmall.png);
+      cursor: pointer;
+            
+    }
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px){ 
+  .subscribe-btn span{display: none;}
+  .subscribe-btn::after{top: -21px;}      
+}
+
+  
