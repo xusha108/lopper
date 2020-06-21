@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Slider extends Component {
+export default class Quote extends Component {
     render() {
         return (
             <>  
@@ -12,7 +12,7 @@ export default class Slider extends Component {
     }
 }
 
-Slider.propTypes = {
+Quote.propTypes = {
     phrase: PropTypes.string,
     name: PropTypes.string,
     company: PropTypes.string,

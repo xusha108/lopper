@@ -24,54 +24,87 @@
   }
 
   &-items{
+   
+
     & div:nth-child(1) img {
       position: absolute;
       top: 28%;
       left: 9%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
     }
     & div:nth-child(2) img{
       position: absolute;
       top: 26%;
       right: 21%;
+      width: 100px;
+      height: 100px;  
+      filter:brightness(40%);
+
+      
     }
     & div:nth-child(3) img{
       position: absolute;
       top: -3%;
       right: 18%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
+
     }
     & div:nth-child(4) img{
       position: absolute;
       top: 21%;
       right: 0%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
+
     }
     & div:nth-child(5) img{
       position: absolute;
       top: 12%;
       left: 5%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
+
     }
     
     & div:nth-child(6) img{
       position: absolute;
       top: 7%;
       left: 21%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
+
     }
     & div:nth-child(7) img{
       position: absolute;
       top: -4%;
       left: 0%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
+
     }
     & div:nth-child(8) img{
       position: absolute;
       top: 0%;
       right: 0%;
+      width: 100px;
+      height: 100px;
+      filter:brightness(40%);
+
     }
   }
 
   .activeSlider{
     background: #F61067;
-    opacity: 0.8;
-    border-radius: 100%;
-    
+    opacity: 0.6;
+    border-radius: 100%;    
   }
 
   .review-slider-btn{
@@ -105,6 +138,7 @@
       text-align: center;
       background:white;
       color:#776C82;  
+      padding:2% 1%;
     }
   }
 }

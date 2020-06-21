@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {users} from '../../../constant/review.js';
 import ArrowLeft from '../../../assets/img/ArrowLeft.png';
 import ArrowRight from '../../../assets/img/ArrowRight.png';
-import Slider from '../Review/Slider';
+import Slider from './Quote';
 
 class Review extends Component {
  
@@ -11,12 +11,25 @@ class Review extends Component {
     currentImageIndex: 0,
   }
 
-  changeSliderIndex= (index) => {    
+  changeSliderIndex= (move) => { 
+   
+   const newState ={...this.state}
 
-    if(this.checkExistIndex(index)) {
-      return this.setState({currentImageIndex: index})
-    }     
-  }
+    if(move){
+      newState.currentImageIndex++
+    }else{
+      newState.currentImageIndex--
+    }
+    
+    if(newState.currentImageIndex >= users.length){
+      newState.currentImageIndex=0
+    }
+
+    if(newState.currentImageIndex < 0){
+      newState.currentImageIndex=users.length-1
+    }
+     this.setState(newState)
+    }
 
   checkExistIndex = (index) => {
    return typeof users[index] !== 'undefined';    
@@ -28,7 +41,7 @@ class Review extends Component {
     return (
       <div className='review'>
         <div className='wrapper'>
-          <div className='review-imgBig'><img src={this.props.source} alt='#'  /></div>
+          <div className='review-imgBig'><img src={users[currentImageIndex].img} alt='#'  /></div>
 
           <div className='review-items'>
             {users.map( (item, index) =>
@@ -47,14 +60,14 @@ class Review extends Component {
               src={ArrowLeft}
               alt='#'
               className='review-arrowLeft'
-              onClick={() => this.changeSliderIndex(currentImageIndex-1)}              
+              onClick={() => this.changeSliderIndex(false)}              
             />
 
             <img
              src={ArrowRight}
              alt='#'
              className='review-arrowRight'
-             onClick={() => this.changeSliderIndex(currentImageIndex+1)}
+             onClick={() => this.changeSliderIndex(true)}
             />
 
           </div>    
